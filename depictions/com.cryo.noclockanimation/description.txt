@@ -1,0 +1,14 @@
+{
+	"packageID":"com.cryo.noclockanimation"
+	, "name":"No Clock Animations"
+	, "developer":"Hellman2741"
+	, "twitter":""
+	, "developerSite":"https://hellman2741.github.io"
+	, "description":[
+		  "Remove the live clock animation from SpringBoard"
+	]
+	, "changelog":[
+		  "1.0", "First!"
+	]
+	, "screenshotCount":0
+}

@@ -1,0 +1,13 @@
+Package: com.cryo.noclockanimation
+Version: 0.0.1-1
+Section: Tweaks
+Maintainer: Hellman2741 <eldo.imo.rs@hotmail.com>
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Filename: ./pkgfiles/com.cryo.noclockanimation_0.0.1-1_iphoneos-arm.deb
+Size: 3208
+Installed-Size: 88
+MD5sum: 032180B24769D9252A54654DF4C86A1B
+Description: No clock animation!
+Name: No Clock Animations
+Author: Hellman2741 <eldo.imo.rs@hotmail.com>
