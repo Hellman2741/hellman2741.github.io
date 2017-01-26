@@ -11,3 +11,17 @@ MD5sum: 032180b24769d9252a54654df4c86a1b
 Description: No clock animation!
 Name: No Clock Animations
 Author: Hellman2741 <eldo.imo.rs@hotmail.com>
+
+Package: com.cryo.noclockanimation
+Version: 0.0.1-2
+Section: Tweaks
+Maintainer: Hellman2741 <eldo.imo.rs@hotmail.com>
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Filename: ./pkgfiles/com.cryo.noclockanimation_0.0.1-2_iphoneos-arm.deb
+Size: 3208
+Installed-Size: 88
+MD5sum: 032180b24769d9252a54654df4c86a1b
+Description: No clock animation!
+Name: No Clock Animations
+Author: Hellman2741 <eldo.imo.rs@hotmail.com>
