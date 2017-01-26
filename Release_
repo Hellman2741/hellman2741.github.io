@@ -7,3 +7,11 @@ Architectures: iphone-arm
 Components: main
 Description: Hellman2741's Repo
 MD5Sum:
+ %uncompress-md5% %uncompress_size% Packages
+ %compress-md5% %compress_size% Packages.bz2
+SHA1:
+ %uncompress-sha1% %uncompress_size% Packages
+ %compress-sha1% %compress_size% Packages.bz2
+SHA256:
+ %uncompress-sha256% %uncompress_size% Packages
+ %compress-sha256% %compress_size% Packages.bz2

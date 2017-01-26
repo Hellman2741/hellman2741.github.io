@@ -1,0 +1,13 @@
+Package: %codename
+Version: %version
+Section: %section
+Maintainer: Hellman2741 <eldo.imo.rs@hotmail.com>
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Filename: %deb_path
+Size: %deb_size
+Installed-Size: %installed_size
+MD5sum: %md5_sum
+Description: %description
+Name: %name
+Author: Hellman2741 <eldo.imo.rs@hotmail.com>
