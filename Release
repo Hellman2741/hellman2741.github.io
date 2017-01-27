@@ -15,3 +15,20 @@ SHA1:
 SHA256:
   d0b439b5cdf123038a03a63544b6d6b1c3f6db3856ee50e4d37d3c7d7e6c3a8e 458 Packages
   51e627f3b47897aab8628beff64c6ffe5e612860f82c5ea46221f3b9bc0a5774 356 Packages.bz2
+Origin: Hellman2741's Repo
+Label: Hellman2741's Repo
+Suite: stable
+Version: 1.0
+Codename: Hellman2741
+Architectures: iphone-arm
+Components: main
+Description: Hellman2741's Repo
+MD5Sum:
+  8b458b7f23c9f1fa77dd50c745be6d79 878 Packages
+  9057733421cfe6e5d705211d15bef992 472 Packages.bz2
+SHA1:
+  6a2488bc53623b3322694e015bfc89b758be020c 878 Packages
+  15badb5dd85a6fafa40d990a531870c02f2ae7e8 472 Packages.bz2
+SHA256:
+  24f18f69c027f595be50f19374a20ed34d23a13d082204343fbd1ff76b27a4e6 878 Packages
+  1528015c32d1c0a18394dad48a069d9a98443ae88be98608ee8e2f9b4f54beed 472 Packages.bz2

@@ -11,3 +11,17 @@ MD5sum: 659f20ac843f344f72e3de4787c6cc70
 Description: Remove live clock animations from SpringBoard
 Name: No Clock Animations
 Author: Hellman2741 <eldo.imo.rs@hotmail.com>
+
+Package: com.ruslan.cleancydia
+Version: 1.0.0-1
+Section: Tweaks
+Maintainer: Hellman2741 <eldo.imo.rs@hotmail.com>
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Filename: ./pkgfiles/com.ruslan.cleancydia_1.0.0-1_iphoneos-arm.deb
+Size: 49636
+Installed-Size: 340
+MD5sum: 1ca7b2934e208413be078094a2bc7f13
+Description: Remove ads from Cydia
+Name: CleanCydia
+Author: Hellman2741 <eldo.imo.rs@hotmail.com>
