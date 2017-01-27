@@ -80,22 +80,41 @@ public class iOSBuilder {
 
 	public void build() {
 		try {
-			BufferedWriter writer = new BufferedWriter(new FileWriter("Packages", true));
+			File file = new File("Packages");
+			BufferedWriter writer = new BufferedWriter(new FileWriter(file, true));
 			for(int i = 0; i < packages.size(); i++) {
 				DebPkg deb = packages.get(i);
 				if(deb == null)
 					continue;
-				if(i != 0) writer.newLine();
-				for(String parameter : builder) {
-					writer.write(deb.replaceInfo(parameter));
+				if(i == 0 && containsData(file)) 
+						writer.newLine();
+				else
 					writer.newLine();
+				for(int p = 0; p < builder.size(); p++) {
+					String line = builder.get(p);
+					writer.write(deb.replaceInfo(line));
+					if(i != builder.size() - 1)
+						writer.newLine();
 				}
 				addVersion(deb.codename, deb.version);
 			}
+			writer.flush();
 			writer.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+	}
+	
+	public boolean containsData(File file) {
+		try {
+			BufferedReader reader = new BufferedReader(new FileReader(file));
+			String line = reader.readLine();
+			reader.close();
+			return line != null;
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return false;
 	}
 
 	public void writeRelease() {
@@ -146,6 +165,7 @@ public class iOSBuilder {
 				writer.write(line.toString());
 				writer.newLine();
 			}
+			writer.flush();
 			writer.close();
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -191,6 +211,7 @@ public class iOSBuilder {
 
 		   FileOutputStream out = new FileOutputStream(compressed);
 		   out.write(compressedByteArray);
+		   out.flush();
 		   out.close();
 		   input.close();
 		   output.close();
@@ -220,9 +241,12 @@ public class iOSBuilder {
 
 	public void addVersion(String codename, String version) {
 		try {
-			BufferedWriter writer = new BufferedWriter(new FileWriter("versions", true));
-			writer.newLine();
+			File file = new File("versions");
+			BufferedWriter writer = new BufferedWriter(new FileWriter(file, true));
+			if(containsData(file))
+				writer.newLine();
 			writer.write(codename+"_"+version);
+			writer.flush();
 			writer.close();
 		} catch(Exception e) { }
 	}
