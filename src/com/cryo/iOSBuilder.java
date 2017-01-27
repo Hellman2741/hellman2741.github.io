@@ -26,28 +26,28 @@ import org.apache.commons.fileupload.util.Streams;
 import org.apache.commons.io.IOUtils;
 
 public class iOSBuilder {
-	
+
 	private ArrayList<DebPkg> packages;
-	
+
 	private HashMap<String, ArrayList<String>> app_versions;
-	
+
 	private ArrayList<String> builder;
-	
+
 	private Scanner scanner;
-	
+
 	private String[][] CHECKSUMS;
-	
+
 	private int[] lengths;
-	
+
 	public static final int MD5 = 0, SHA1 = 1, SHA256 = 2;
-	
+
 	//look through /pkgfiles for new .deb
 	//find new .deb, get new MD5 for it.
 	//add all new packages with md5s to Packages
 	//zip Packages with 7zip to bzip2
 	//get MD5, SHA1, SHA-256 of Packages
 	//edit Release, copy from Release_, change encryption values
-	
+
 	public void load() {
 		packages = new ArrayList<>();
 		app_versions = new HashMap<>();
@@ -77,7 +77,7 @@ public class iOSBuilder {
 		writeRelease();
 		scanner.close();
 	}
-	
+
 	public void build() {
 		try {
 			BufferedWriter writer = new BufferedWriter(new FileWriter("Packages", true));
@@ -97,7 +97,7 @@ public class iOSBuilder {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public void writeRelease() {
 		try {
 			BufferedWriter writer = new BufferedWriter(new FileWriter("Release", true));
@@ -151,7 +151,7 @@ public class iOSBuilder {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public void buildChecksums() {
 		File uncompress = new File("Packages");
 		File compress = new File("Packages.bz2");
@@ -164,15 +164,15 @@ public class iOSBuilder {
 		lengths[0] = (int) uncompress.length();
 		lengths[1] = (int) compress.length();
 	}
-	
+
 	public void compressPackages() {
 		File file = new File("Packages");
 		try {
-			
+
 			byte[] bytes;
-			
+
 			bytes = IOUtils.toByteArray(new FileInputStream(file));
-			
+
 			final ByteArrayOutputStream baos = new ByteArrayOutputStream();
 
 			InputStream input = new ByteArrayInputStream(bytes);
@@ -184,11 +184,11 @@ public class iOSBuilder {
 			input.close();
 
 		   final byte[] compressedByteArray = baos.toByteArray();
-		   
+
 		   File compressed = new File("Packages.bz2");
 		   if(compressed.exists())
 			   compressed.delete();
-		   
+
 		   FileOutputStream out = new FileOutputStream(compressed);
 		   out.write(compressedByteArray);
 		   out.close();
@@ -198,13 +198,13 @@ public class iOSBuilder {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public void addToBeBuilt(DebPkg deb) {
 		deb.buildMD5();
 		deb.loadPackageInfo();
 		packages.add(deb);
 	}
-	
+
 	public void loadTemplate(String file) {
 		builder = new ArrayList<>();
 		try {
@@ -217,7 +217,7 @@ public class iOSBuilder {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public void addVersion(String codename, String version) {
 		try {
 			BufferedWriter writer = new BufferedWriter(new FileWriter("versions", true));
@@ -226,7 +226,7 @@ public class iOSBuilder {
 			writer.close();
 		} catch(Exception e) { }
 	}
-	
+
 	public void loadVersions() {
 		try {
 			BufferedReader reader = new BufferedReader(new FileReader(new File("versions")));
@@ -247,18 +247,18 @@ public class iOSBuilder {
 			reader.close();
 		} catch(Exception e) { e.printStackTrace(); }
 	}
-	
+
 	public String[] getData(File deb) {
 		String[] data = deb.getName().split("_");
 		String codename = data[0];
 		String version = data[1].replace(".deb", "");
 		return new String[] { codename, version };
 	}
-	
+
 	public static void main(String[] args) {
 		new iOSBuilder().load();
 	}
-	
+
 	public static String buildHex(File file, int digest) {
 		try {
 			switch(digest) {
@@ -269,21 +269,21 @@ public class iOSBuilder {
 			}
 		} catch(IOException e) { e.printStackTrace(); return null; }
 	}
-	
+
 	public class DebPkg {
-		
+
 		private String codename, version, MD5Sum;
-		
+
 		private File file;
-		
+
 		private HashMap<String, String> parameters;
-		
+
 		public DebPkg(String codename, String version, File file) {
 			this.codename = codename;
 			this.version = version;
 			this.file = file;
 		}
-		
+
 		public String replaceInfo(String string) {
 			string = string.replace("%name", parameters.get("name"));
 			string = string.replace("%codename", parameters.get("codename"));
@@ -296,7 +296,7 @@ public class iOSBuilder {
 			string = string.replace("%description", parameters.get("description"));
 			return string;
 		}
-		
+
 		public void loadPackageInfo() {
 			parameters = new HashMap<>();
 			System.out.println("Input name for: "+codename+"_"+version+":");
@@ -314,13 +314,13 @@ public class iOSBuilder {
 			parameters.put("md5_sum", MD5Sum);
 			parameters.put("description", description);
 			parameters.put("name", name);
-			
+
 		}
-		
+
 		public void buildMD5() {
 			MD5Sum = iOSBuilder.buildHex(file, MD5);
 		}
-		
+
 	}
 
 }
