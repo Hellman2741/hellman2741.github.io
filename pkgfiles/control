@@ -1,0 +1,10 @@
+Package: com.cryo.noclockanimation
+Name: No Clock Animation
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: Stop live clock animations!
+Maintainer: Cody Thompson
+Author: Cody Thompson
+Section: Tweaks
+Version: 1.0.0-1
+Installed-Size: 168

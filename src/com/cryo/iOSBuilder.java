@@ -86,14 +86,17 @@ public class iOSBuilder {
 				DebPkg deb = packages.get(i);
 				if(deb == null)
 					continue;
-				if(i == 0 && containsData(file)) 
-						writer.newLine();
-				else
+				if(i == 0 && containsData(file)) {
+					System.out.println("Contains data: Packages");
+					writer.newLine();
+				} else if(i != 0)
 					writer.newLine();
 				for(int p = 0; p < builder.size(); p++) {
 					String line = builder.get(p);
+					if(line == null || line == "")
+						continue;
 					writer.write(deb.replaceInfo(line));
-					if(i != builder.size() - 1)
+					if(i != builder.size())
 						writer.newLine();
 				}
 				addVersion(deb.codename, deb.version);
