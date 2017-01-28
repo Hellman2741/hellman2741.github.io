@@ -1,12 +1,10 @@
 ARCHS = armv7 armv7s arm64
-THEOS_DEVICE_IP = localhost
 include theos/makefiles/common.mk
 
 TWEAK_NAME = NoClockAnimation
 NoClockAnimation_FILES = ClockAnimation.xm
 NoClockAnimation_FRAMEWORKS = UIKit
 NoClockAnimation_PRIVATE_FRAMEWORKS = Preferences
-SDKVERSION = 8.1
 
 NoClockAnimation_CFLAGS = -fobjc-arc
 NoClockAnimation_LDFLAGS += -Wl,-segalign,4000
