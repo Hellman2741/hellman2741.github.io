@@ -44,7 +44,7 @@ public class iOSBuilder {
 	//look through /pkgfiles for new .deb
 	//find new .deb, get new MD5 for it.
 	//add all new packages with md5s to Packages
-	//zip Packages with 7zip to bzip2
+	//compress Packages with bzip2
 	//get MD5, SHA1, SHA-256 of Packages
 	//edit Release, copy from Release_, change encryption values
 

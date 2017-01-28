@@ -1,55 +1,13 @@
-Package: com.cryo.noclockanimation
-Version: 1.0.0-1
+Package: com.cryo.universaltweak
+Version: 0.0.1-1
 Section: Tweaks
 Maintainer: Hellman2741 <eldo.imo.rs@hotmail.com>
 Depends: mobilesubstrate
 Architecture: iphoneos-arm
-Filename: ./pkgfiles/com.cryo.noclockanimation_1.0.0-1_iphoneos-arm.deb
-Size: 9710
+Filename: ./pkgfiles/com.cryo.universaltweak_0.0.1-1_iphoneos-arm.deb
+Size: 14620
 Installed-Size: 280
-MD5sum: ca1ad2bd1043473ea22d079e2cc543e6
-Description: Test
-Name: NoClockAnims
-Author: Hellman2741 <eldo.imo.rs@hotmail.com>
-
-Package: com.cryo.noclockanimation
-Version: 1.0.0-2
-Section: Tweaks
-Maintainer: Hellman2741 <eldo.imo.rs@hotmail.com>
-Depends: mobilesubstrate
-Architecture: iphoneos-arm
-Filename: ./pkgfiles/com.cryo.noclockanimation_1.0.0-2_iphoneos-arm.deb
-Size: 6622
-Installed-Size: 180
-MD5sum: 2e6d30f22724b199ba61ef3f33f57ec6
-Description: Test
-Name: NoClockAnims
-Author: Hellman2741 <eldo.imo.rs@hotmail.com>
-
-Package: com.cryo.noclockanimation
-Version: 1.0.0-3
-Section: Tweaks
-Maintainer: Hellman2741 <eldo.imo.rs@hotmail.com>
-Depends: mobilesubstrate
-Architecture: iphoneos-arm
-Filename: ./pkgfiles/com.cryo.noclockanimation_1.0.0-3_iphoneos-arm.deb
-Size: 9712
-Installed-Size: 280
-MD5sum: 27a02f845482245b6d21494f858c152a
-Description: Test
-Name: NoClockAnims
-Author: Hellman2741 <eldo.imo.rs@hotmail.com>
-
-Package: com.cryo.noclockanimation
-Version: 1.0.0-5
-Section: Tweaks
-Maintainer: Hellman2741 <eldo.imo.rs@hotmail.com>
-Depends: mobilesubstrate
-Architecture: iphoneos-arm
-Filename: ./pkgfiles/com.cryo.noclockanimation_1.0.0-5_iphoneos-arm.deb
-Size: 13072
-Installed-Size: 280
-MD5sum: 409def910a91dc1f28cfab1a3b1014f5
-Description: Remove live clock animations from SpringBoard
-Name: No Clock Animations
+MD5sum: 7e69a981ef96cfbf90f0db5c4ac78cbf
+Description: Hellman2741's universal tweak for small updates
+Name: Universal Tweak
 Author: Hellman2741 <eldo.imo.rs@hotmail.com>

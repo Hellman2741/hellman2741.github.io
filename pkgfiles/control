@@ -1,10 +1,10 @@
-Package: com.cryo.noclockanimation
-Name: No Clock Animation
+Package: com.cryo.universaltweak
+Name: Cody's Universal Tweak
 Depends: mobilesubstrate
 Architecture: iphoneos-arm
-Description: Stop live clock animations!
+Description: An awesome MobileSubstrate tweak!
 Maintainer: Cody Thompson
 Author: Cody Thompson
 Section: Tweaks
-Version: 1.0.0-5
+Version: 0.0.1-1
 Installed-Size: 280
