@@ -122,7 +122,7 @@ public class iOSBuilder {
 
 	public void writeRelease() {
 		try {
-			BufferedWriter writer = new BufferedWriter(new FileWriter("Release", true));
+			BufferedWriter writer = new BufferedWriter(new FileWriter("Release", false));
 			for(String parameter : builder) {
 				String[] data = parameter.split(" ");
 				for(int i = 0; i < data.length; i++) {
