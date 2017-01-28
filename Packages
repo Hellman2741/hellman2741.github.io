@@ -5,93 +5,9 @@ Maintainer: Hellman2741 <eldo.imo.rs@hotmail.com>
 Depends: mobilesubstrate
 Architecture: iphoneos-arm
 Filename: ./pkgfiles/com.cryo.noclockanimation_1.0.0-1_iphoneos-arm.deb
-Size: 5720
-Installed-Size: 168
-MD5sum: 659f20ac843f344f72e3de4787c6cc70
-Description: Remove live clock animations from SpringBoard
-Name: No Clock Animations
-Author: Hellman2741 <eldo.imo.rs@hotmail.com>
-
-Package: com.ruslan.cleancydia
-Version: 1.0.0-1
-Section: Tweaks
-Maintainer: Hellman2741 <eldo.imo.rs@hotmail.com>
-Depends: mobilesubstrate
-Architecture: iphoneos-arm
-Filename: ./pkgfiles/com.ruslan.cleancydia_1.0.0-1_iphoneos-arm.deb
-Size: 49636
-Installed-Size: 340
-MD5sum: 1ca7b2934e208413be078094a2bc7f13
-Description: Remove ads from Cydia
-Name: CleanCydia
-Author: Hellman2741 <eldo.imo.rs@hotmail.com>
-
-Package: com.cryo.noclockanimation
-Version: 1.0.0-2
-Section: Tweaks
-Maintainer: Hellman2741 <eldo.imo.rs@hotmail.com>
-Depends: mobilesubstrate
-Architecture: iphoneos-arm
-Filename: ./pkgfiles/com.cryo.noclockanimation_1.0.0-2_iphoneos-arm.deb
-Size: 7806
-Installed-Size: 192
-MD5sum: 7743631f419f084c7b57344e868c927a
-Description: Remove live clock animations from SpringBoard
-Name: No Clock Animations
-Author: Hellman2741 <eldo.imo.rs@hotmail.com>
-
-Package: com.ruslan.cleancydia
-Version: 1.0.0-3
-Section: Tweaks
-Maintainer: Hellman2741 <eldo.imo.rs@hotmail.com>
-Depends: mobilesubstrate
-Architecture: iphoneos-arm
-Filename: ./pkgfiles/com.ruslan.cleancydia_1.0.0-3_iphoneos-arm.deb
-Size: 55730
-Installed-Size: 340
-MD5sum: 6b0d6d6135bd5f67bf667dcbaecaa726
-Description: Remove Cydia ads
-Name: Clean Cydia
-Author: Hellman2741 <eldo.imo.rs@hotmail.com>
-
-Package: com.cryo.noclockanimation
-Version: 1.0.0-3
-Section: Tweaks
-Maintainer: Hellman2741 <eldo.imo.rs@hotmail.com>
-Depends: mobilesubstrate
-Architecture: iphoneos-arm
-Filename: ./pkgfiles/com.cryo.noclockanimation_1.0.0-3_iphoneos-arm.deb
-Size: 7814
-Installed-Size: 192
-MD5sum: 2a251ee0eb3eb70d2ab230f4abe26eec
-Description: Remove live clock animations with settings
-Name: No Clock Animations
-Author: Hellman2741 <eldo.imo.rs@hotmail.com>
-
-Package: com.cryo.noclockanimation
-Version: 1.0.0-5
-Section: Tweaks
-Maintainer: Hellman2741 <eldo.imo.rs@hotmail.com>
-Depends: mobilesubstrate
-Architecture: iphoneos-arm
-Filename: ./pkgfiles/com.cryo.noclockanimation_1.0.0-5_iphoneos-arm.deb
-Size: 9774
-Installed-Size: 284
-MD5sum: eda74e36261dd62afc66ee8e9531335e
-Description: Remove live clock animations from SpringBoard
-Name: No Clock Animations
-Author: Hellman2741 <eldo.imo.rs@hotmail.com>
-
-Package: com.cryo.noclockanimation
-Version: 1.0.0-6
-Section: Tweaks
-Maintainer: Hellman2741 <eldo.imo.rs@hotmail.com>
-Depends: mobilesubstrate
-Architecture: iphoneos-arm
-Filename: ./pkgfiles/com.cryo.noclockanimation_1.0.0-6_iphoneos-arm.deb
-Size: 9774
-Installed-Size: 284
-MD5sum: 72b4577a729c44a88c1981f75a5e84d6
-Description: Remove live clock animations (test settings)
-Name: No Clock Animations
+Size: 9710
+Installed-Size: 280
+MD5sum: ca1ad2bd1043473ea22d079e2cc543e6
+Description: Test
+Name: NoClockAnims
 Author: Hellman2741 <eldo.imo.rs@hotmail.com>

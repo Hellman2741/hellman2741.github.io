@@ -1,6 +1,6 @@
 {
     entry = {
-	bundle = ClockAnimationSettings;
+	bundle = ClockAnimationSettings2;
 	cell = PSLinkCell;
 	detail = ClockAnimationSettingsListController;
 	icon = ClockAnimationSettings.png;
