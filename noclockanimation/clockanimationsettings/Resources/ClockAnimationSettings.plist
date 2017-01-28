@@ -8,7 +8,7 @@
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>label</key>
-			<string>ClockAnimationSettings First Page</string>
+			<string>Clock Animation Settings</string>
 		</dict>
 		<dict>
 			<key>cell</key>
@@ -18,12 +18,12 @@
 			<key>defaults</key>
 			<string>com.cryo.clockanimationsettings</string>
 			<key>key</key>
-			<string>AwesomeSwitch1</string>
+			<string>enabled</string>
 			<key>label</key>
-			<string>Awesome Switch 1</string>
+			<string>Enabled</string>
 		</dict>
 	</array>
 	<key>title</key>
-	<string>ClockAnimationSettings</string>
+	<string>Clock Animation Settings</string>
 </dict>
 </plist>
