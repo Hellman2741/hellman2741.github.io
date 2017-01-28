@@ -5,9 +5,9 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
-	<string>ClockAnimationSettings2</string>
+	<string>ClockAnimationSettings</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.cryo.clockanimationsettings2</string>
+	<string>com.cryo.clockanimationsettings</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundlePackageType</key>

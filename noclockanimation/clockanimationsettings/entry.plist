@@ -1,10 +1,10 @@
 {
     entry = {
-	bundle = ClockAnimationSettings2;
+	bundle = ClockAnimationSettings;
 	cell = PSLinkCell;
 	detail = ClockAnimationSettingsListController;
 	icon = ClockAnimationSettings.png;
 	isController = 1;
-	label = ClockAnimationSettings2;
+	label = ClockAnimationSettings;
     };
 }

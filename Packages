@@ -25,3 +25,17 @@ MD5sum: 2e6d30f22724b199ba61ef3f33f57ec6
 Description: Test
 Name: NoClockAnims
 Author: Hellman2741 <eldo.imo.rs@hotmail.com>
+
+Package: com.cryo.noclockanimation
+Version: 1.0.0-3
+Section: Tweaks
+Maintainer: Hellman2741 <eldo.imo.rs@hotmail.com>
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Filename: ./pkgfiles/com.cryo.noclockanimation_1.0.0-3_iphoneos-arm.deb
+Size: 9712
+Installed-Size: 280
+MD5sum: 27a02f845482245b6d21494f858c152a
+Description: Test
+Name: NoClockAnims
+Author: Hellman2741 <eldo.imo.rs@hotmail.com>
