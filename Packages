@@ -81,3 +81,17 @@ MD5sum: eda74e36261dd62afc66ee8e9531335e
 Description: Remove live clock animations from SpringBoard
 Name: No Clock Animations
 Author: Hellman2741 <eldo.imo.rs@hotmail.com>
+
+Package: com.cryo.noclockanimation
+Version: 1.0.0-6
+Section: Tweaks
+Maintainer: Hellman2741 <eldo.imo.rs@hotmail.com>
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Filename: ./pkgfiles/com.cryo.noclockanimation_1.0.0-6_iphoneos-arm.deb
+Size: 9774
+Installed-Size: 284
+MD5sum: 72b4577a729c44a88c1981f75a5e84d6
+Description: Remove live clock animations (test settings)
+Name: No Clock Animations
+Author: Hellman2741 <eldo.imo.rs@hotmail.com>
