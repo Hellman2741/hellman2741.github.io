@@ -5,6 +5,6 @@
 	detail = ClockAnimationSettingsListController;
 	icon = ClockAnimationSettings.png;
 	isController = 1;
-	label = ClockAnimationSettings;
+	label = ClockAnimationSettings2;
     };
 }

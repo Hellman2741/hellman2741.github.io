@@ -1,7 +1,7 @@
 ARCHS = armv7 armv7s arm64
 include theos/makefiles/common.mk
 
-BUNDLE_NAME = ClockAnimationSettings
+BUNDLE_NAME = ClockAnimationSettings2
 ClockAnimationSettings_FILES = ClockAnimationSettings.mm
 ClockAnimationSettings_INSTALL_PATH = /Library/PreferenceBundles
 ClockAnimationSettings_FRAMEWORKS = UIKit
