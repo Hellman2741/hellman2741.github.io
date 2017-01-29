@@ -25,3 +25,17 @@ MD5sum: d56821509c9fd55204115d2951eb4f49
 Description: Universal tweak for Cody's desired settings
 Name: Universal Tweak
 Author: Hellman2741 <eldo.imo.rs@hotmail.com>
+
+Package: com.cryo.universaltweak
+Version: 0.0.1-3
+Section: Tweaks
+Maintainer: Hellman2741 <eldo.imo.rs@hotmail.com>
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Filename: ./pkgfiles/com.cryo.universaltweak_0.0.1-3_iphoneos-arm.deb
+Size: 16654
+Installed-Size: 280
+MD5sum: 1d8b910dd244409122b2188f6fa74a1c
+Description: Universal tweak for common settings
+Name: Universal Tweak
+Author: Hellman2741 <eldo.imo.rs@hotmail.com>
