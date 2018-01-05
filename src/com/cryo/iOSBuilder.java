@@ -18,9 +18,6 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 import org.apache.commons.codec.digest.DigestUtils;
-import org.apache.commons.compress.compressors.CompressorException;
-import org.apache.commons.compress.compressors.CompressorOutputStream;
-import org.apache.commons.compress.compressors.CompressorStreamFactory;
 import org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream;
 import org.apache.commons.fileupload.util.Streams;
 import org.apache.commons.io.IOUtils;

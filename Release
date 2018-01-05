@@ -1,11 +1,11 @@
-Origin: Hellman2741's Repo
-Label: Hellman2741's Repo
+Origin: Pyragon's Repo
+Label: Pyragon's Repo
 Suite: stable
 Version: 1.0
-Codename: Hellman2741
+Codename: Pyragon
 Architectures: iphone-arm
 Components: main
-Description: Hellman2741's Repo
+Description: Pyragon's Repo
 MD5Sum:
   c7f8982045d945391910f2f21419092a 506 Packages
   a09b4009d3048465e8f66c58557598ce 374 Packages.bz2
